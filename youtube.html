@@ -3,7 +3,16 @@
 
     <head>
         <title>My personal Youtube... </title>
-        <style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+       
+       <style>
+        p{
+            font-family: Roboto, Arial;
+            margin-top: 0;
+           
+        }
             .thumbnail{
                 width:300px;
                
@@ -17,6 +26,41 @@
             .search-bar{
                 display: block;
             }
+            .channel-picture{
+                display: inline-block;
+                width: 2px;
+                vertical-align: top;
+            }
+            .video-info{
+                display: inline-block;
+                width: 200px;
+                margin-left: 51px;
+                vertical-align: top;
+               
+            }
+            .profile-image{
+                width: 30px;
+                border-radius: 40px;
+              
+            }
+            .video-title{
+                margin-top: 0;
+                font-size: 14px ;
+                font-weight: 500;
+                line-height: 20px;
+            }
+            .thumbnail-row{
+                margin-top: 12px;
+            }
+            .video-author{
+                font-size: 12px;
+                color:rgb(96,96,96);
+                margin-bottom: 4px;
+            }
+            .video-stats{
+                font-size: 12px;
+                color:rgb(96,96,96);
+            }
         </style>
     </head>
     <body>
@@ -25,11 +69,11 @@
 <div class="video-preview"> 
     <div class="image"><img  class="thumbnail" src="images/hq720.avif"></div>
   
-    <div>
-        <div class="profile-img">
-            <img src="images/profile1.jpg" al="">
+    <div class="thumbnail-row">
+        <div class="channel-picture">
+            <img class="profile-image" src="images/profile1.jpg" al="">
         </div>
-        <div class="video-description">
+        <div class="video-info">
         <p class="video-title"> Talking Tech and AI with Google CEO Sundar Pichai!</p>
         <p class="video-author">Marques Brownlee</p>
         <p class="video-stats">3.4M views &#183; 6 months ago</p>
